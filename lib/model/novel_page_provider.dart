@@ -437,7 +437,7 @@ class NovelPageProvider with ChangeNotifier {
 
   void tapNextPage() {
     if (_readSetting.pageSwitch == Profile.novelScroll) {
-      final leftHeight =
+      /*final leftHeight =
           _controller.position.maxScrollExtent - _controller.position.pixels;
       if (leftHeight > height) {
         _controller.animateTo(
@@ -453,7 +453,7 @@ class NovelPageProvider with ChangeNotifier {
           duration: Duration(milliseconds: 400),
           curve: Curves.easeInOut,
         );
-      }
+      }*/
     } else if (_readSetting.pageSwitch == Profile.novelHorizontalSlide ||
         _readSetting.pageSwitch == Profile.novelVerticalSlide) {
       _pageController.nextPage(
@@ -471,7 +471,7 @@ class NovelPageProvider with ChangeNotifier {
 
   void tapLastPage() {
     if (_readSetting.pageSwitch == Profile.novelScroll) {
-      if (_controller.position.pixels > height) {
+      /*if (_controller.position.pixels > height) {
         _controller.animateTo(
           _controller.position.pixels - height,
           duration: Duration(milliseconds: 400),
@@ -485,7 +485,7 @@ class NovelPageProvider with ChangeNotifier {
           duration: Duration(milliseconds: 400),
           curve: Curves.easeInOut,
         );
-      }
+      }*/
     } else if (_readSetting.pageSwitch == Profile.novelHorizontalSlide ||
         _readSetting.pageSwitch == Profile.novelVerticalSlide) {
       _pageController.previousPage(

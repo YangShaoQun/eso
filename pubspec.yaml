@@ -23,7 +23,7 @@ dependencies:
     path: modules/xpath
   file_chooser:
     git:
-      url: https://github.com/google/flutter-desktop-embedding
+      url: https://github.com/YangShaoQun/flutter-desktop-embedding
       path: plugins/file_chooser
   about: ^1.2.0
   archive: ^2.0.13
